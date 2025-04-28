@@ -1,0 +1,154 @@
+/* Write your CSS here */
+/* index.css */
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.responsive-container {
+  width: 100%;
+  max-width: 1140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  color: #0f172a;
+  font-family: 'Lobster', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.filters-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  justify-content: center;
+  gap: 15px;
+}
+
+.repositories-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.failure-view-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.failure-view-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+.error-message {
+  color: #1e293b;
+  font-family: 'Bree Serif', sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .heading {
+    font-size: 2.2rem;
+  }
+  
+  .repositories-list {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+  
+  .filters-list {
+    gap: 12px;
+    margin-bottom: 15px;
+  }
+  
+  .failure-view-image {
+    max-width: 400px;
+  }
+  
+  .error-message {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .app-container {
+    padding: 15px;
+  }
+  
+  .heading {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .filters-list {
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .repositories-list {
+    gap: 12px;
+  }
+  
+  .failure-view-image {
+    max-width: 300px;
+  }
+  
+  .error-message {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .heading {
+    font-size: 1.5rem;
+  }
+  
+  .filters-list {
+    gap: 8px;
+  }
+  
+  .repositories-list {
+    gap: 10px;
+  }
+  
+  .failure-view-image {
+    max-width: 250px;
+  }
+}
+
+/* Loader styles */
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+}

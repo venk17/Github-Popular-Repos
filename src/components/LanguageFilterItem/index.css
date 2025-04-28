@@ -1,0 +1,61 @@
+/* Write your CSS here */
+/* index.css */
+
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.language-btn {
+  color: #0f172a;
+  background-color: transparent;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 1px solid #0284c7;
+  border-radius: 20px;
+  padding: 8px 16px;
+  margin: 0;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.language-btn:hover {
+  background-color: #f1f5f9;
+}
+
+.active-language-btn {
+  color: #ffffff;
+  background-color: #0284c7;
+}
+
+.active-language-btn:hover {
+  background-color: #0369a1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .language-btn {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  border-radius: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .language-btn {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    border-radius: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .language-btn {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+    border-radius: 14px;
+  }
+}

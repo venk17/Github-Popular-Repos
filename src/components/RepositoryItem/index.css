@@ -1,0 +1,148 @@
+/* Write your CSS here */
+/* index.css */
+
+.repository-item {
+  background-color: #f8f8ff;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.repository-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.repository-image {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.repository-name {
+  color: #0f172a;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+  word-break: break-word;
+}
+
+.stats-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  width: 100%;
+  justify-content: center;
+}
+
+.stats-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.stats-text {
+  color: #1e293b;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .repository-item {
+    max-width: 280px;
+    padding: 18px;
+  }
+
+  .repository-image {
+    width: 110px;
+    height: 110px;
+  }
+
+  .repository-name {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .repository-item {
+    max-width: 240px;
+    padding: 15px;
+    margin: 8px;
+  }
+
+  .repository-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .repository-name {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  .stats-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .repository-item {
+    max-width: 200px;
+    padding: 12px;
+    margin: 6px;
+  }
+
+  .repository-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .repository-name {
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+
+  .stats-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+  }
+
+  .stats-text {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .repository-item {
+    max-width: 160px;
+    padding: 10px;
+    margin: 4px;
+  }
+
+  .repository-image {
+    width: 70px;
+    height: 70px;
+  }
+
+  .repository-name {
+    font-size: 0.9rem;
+  }
+
+  .stats-container {
+    margin-bottom: 8px;
+  }
+}
